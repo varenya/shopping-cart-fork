@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <header class="p-4">
+      <h1
+        class="text-3xl text-center text-bold uppercase tracking-wide"
+        style="color: #e76f51; font-family: 'Roboto', sans-serif;"
+      >
+        Products
+      </h1>
+    </header>
+    <section class="p-4">
+      <ul>
+        <li class="flex justify-center mb-4">
+          <div
+            class="py-4 px-4 w-3/4 text-center flex justify-between items-center rounded shadow-xl md:w-1/2"
+            style="background: #2a9d8f;"
+          >
+            <span class="item-name text-white w-1/3">Cinthol</span>
+            <span class="item-quantity text-white w-1/3 price" data-price="10">
+              $ 10
+            </span>
+            <div class="w-1/3">
+              <button
+                class="px-6 py-1 text-white rounded focus:outline-none add-button"
+                style="background: #264653;"
+                data-product-id="1"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="flex justify-center mb-4">
+          <div
+            class="py-4 px-4 w-3/4 text-center flex justify-between items-center rounded shadow-xl md:w-1/2"
+            style="background: #2a9d8f;"
+          >
+            <span class="text-white w-1/3">Axe</span>
+            <span class="text-white w-1/3 price">$ 5 </span>
+            <div class="w-1/3">
+              <button
+                class="px-6 py-1 text-white rounded focus:outline-none add-button second-button"
+                style="background: #264653;"
+                data-product-id="2"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <hr />
+    <section class="total p-4">
+      <div
+        class="w-3/4 p-2 my-0 mx-auto flex items-center justify-center"
+        style="color: #05668d;"
+      >
+        <div class="w-8 h-8 mr-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+            />
+          </svg>
+        </div>
+        <div class="text-2xl" id="total">Total : 0</div>
+      </div>
+    </section>
+    <script src="src/index.js"></script>
+  </body>
+</html>
